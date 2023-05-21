@@ -1,0 +1,171 @@
+.signUp-container {
+    width: 30vw;
+    height: 65vh;
+    background-color: rgb(238, 130, 52);
+    margin: 115px auto;
+
+}
+
+.signUp-nav-container {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(238, 130, 52);
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 20px;
+
+}
+
+.signUp-nav-container h3 {
+    width: 90px;
+    height: 30px;
+    /* background-color: blue; */
+    padding: 5px;
+    margin-top: 45px;
+    margin-right: 0px;
+    font-size: 30px;
+    color: white;
+
+}
+
+.signUp-nav-container a {
+    display: block;
+    width: 180px;
+    height: 50px;
+    /* background-color: aquamarine; */
+    font-size: 40px;
+    margin-left: 30px;
+    /* text-decoration: underline; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signUp-nav-container a {
+    /* text-decoration: none; */
+    color: rgb(232, 230, 230);
+
+}
+
+.signUp-nav-container a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+/* //mainlogin content */
+
+.signUp-main-container {
+    width: 80%;
+    height: 385px;
+    /* background-color: burlywood; */
+    margin: 32px auto;
+    text-align: center;
+}
+
+/* 
+.username-container {
+    margin: 3px;
+} */
+
+.signUpUsername-container label {
+    display: block;
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    /* background-color: brown; */
+    color: white;
+    padding-left: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signUpUsername-container input {
+    width: 280px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 28px;
+    background-color: rgb(165, 90, 36);
+    border: 1px solid #ededed;
+    /* margin: 10px; */
+    color: white;
+}
+
+.signUpEmail-container label {
+    display: block;
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    /* background-color: brown; */
+    color: white;
+    padding-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signUpEmail-container input {
+    width: 280px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 28px;
+    background-color: rgb(165, 90, 36);
+    border: 1px solid #ededed;
+    /* margin: 10px; */
+    color: white;
+}
+
+/* .password-container {
+    margin: 3px;
+} */
+
+.signUpPassword-container label {
+    display: block;
+    width: 200px;
+    height: 20px;
+    font-size: 20px;
+    /* background-color: brown; */
+    color: white;
+    padding-left: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signUpPassword-container input {
+    width: 280px;
+    height: 37px;
+    font-size: 20px;
+    border-radius: 28px;
+    background-color: rgb(165, 90, 36);
+    border: 1px solid #ededed;
+    /* margin: 10px; */
+    color: white;
+}
+
+.signUp-main-container button {
+    width: 290px;
+    height: 60px;
+    background-color: white;
+    border-radius: 35px;
+    color: chocolate;
+    font-size: 25px;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.signUp-main-container button:hover {
+    color: rgb(192, 191, 191);
+}
+
+.signUp-main-container a {
+    display: block;
+    text-decoration: none;
+    margin-top: 17px;
+    color: white;
+    font-style: italic;
+
+}
+
+.signUp-main-container a:hover {
+    color: rgb(192, 191, 191);
+}

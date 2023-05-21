@@ -1,0 +1,48 @@
+<%- include("../partials/header")%>
+    <%- include("../partials/navbar") %>
+
+
+
+        <div class="edit-container">
+
+
+
+            <form class="editForm-container needs-validation" action="/products" method="post" novalidate>
+                <h1>CREATE NEW PRODUCT</h1>
+                <div class="img-container editValue-container ">
+                    <label for="">Username :</label>
+                    <input type="text" class="" value="" name="product[name]" required>
+                </div><br><br>
+                <div class="price-container editValue-container">
+                    <label for="">Price :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="product[price]" id="" value="" required>
+
+                </div><br><br>
+                <div class="img-container editValue-container">
+                    <label for="">Image :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="product[img]" id="" value="" required>
+
+                </div><br><br>
+                <div class="desc-container editValue-container">
+                    <label for="">Desc : </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea name="product[desc]" id="" cols="40" rows="5" required></textarea>
+
+                </div><br><br><br><br>
+
+                <button type="submit" class="editValue-container">CREATE</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include("../partials/footer") %>

@@ -1,0 +1,61 @@
+<div class="navbar">
+    <div class="navbar-container">
+
+        <div class="navbar-logo">
+            <h1><a href="/products">SneakerShoes</a></h1>
+        </div>
+
+
+        <ul class="navbar-list active" id="nav-links">
+            <li class="navbar-list-item"><a href="/products">Home</a></li>
+            <li class="navbar-list-item"><a href="/products">Products</a></li>
+            <li class="navbar-list-item"> <a href="/cart/contact">Contact</a></li>
+
+            <% if(!currentUser){ %>
+                <li class="navbar-list-item"> <a href="/login">Login</a></li>
+                <% }else{ %>
+                    <li class="navbar-list-item">
+                        <a href="/userProfile" style="color: chocolate;">Hello <%=currentUser.username %></a>
+                    </li>
+                    <li class="navbar-list-item">
+                        <a href="/user/<%=currentUser._id%>/cart" class="nav-link active"><i
+                                class="fas fa-shopping-cart"></i>
+                            <sup><span class="badge bg-danger">
+                                    <%=currentUser.cart.length%>
+                                </span></sup>
+                        </a>
+                    </li>
+                    <% } %>
+
+        </ul>
+        <a class="navbar-list-item hamburger-toggle" id="nav-toggle"><span class=" hamburger nav-toggle"></span></a>
+
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+    const toggleButton = document.getElementById('nav-toggle')
+    const navLinks = document.getElementById('nav-links')
+    const navButton = document.getElementsByClassName('navbar-list-item');
+
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
+
+
+</script>
+
+
+
+
+<!-- <h1>footer</h1> -->

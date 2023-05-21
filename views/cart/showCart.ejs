@@ -1,0 +1,69 @@
+<%- include("../partials/header")%>
+
+    <%- include("../partials/navbar") %>
+
+
+
+        <div class="cart-container">
+            <div class="productCart-container">
+                <div class="productCart-Nav">
+                    <h3>CART ITEMS</h3>
+                </div><br>
+                <hr width="93%">
+
+                <% for(let item of userCart){ %>
+                    <div class="productCartItem">
+                        <img src="<%=item.img %>" alt="" srcset="">
+                        <h4>
+                            <%=item.name %>
+                        </h4>
+                        <h5>
+                            <strong>$</strong>
+                            <%=item.price %>
+                        </h5>
+                        <form action="/user/<%=currentUser._id %>/cart/<%=item._id%>?_method=Delete" method="post">
+                            <button>Remove</button>
+                        </form>
+
+                    </div>
+                    <% } %>
+
+
+            </div>
+            <div class="totalCart-container">
+
+                <h4>SUMMARY</h4>
+                <hr width="90%">
+                <% totalAmount=0 %>
+
+                    <%for(let item of userCart) {%>
+
+                        <%totalAmount +=item.price%>
+
+                            <% } %>
+
+                                <div class="cartItems">
+                                    <h5>ITEMS &nbsp; <strong>
+                                            <%= userCart.length; %>
+                                        </strong>
+                                    </h5>
+                                    <h5>$ <%=totalAmount %>
+                                    </h5>
+                                </div>
+                                <hr width="90%">
+                                <div class="cartItemsPrice">
+                                    <h5><b>TOTAL AMOUNT</b> </h5>
+                                    <h5> $ <%=totalAmount %>
+                                    </h5>
+                                </div>
+
+                                <a href="/cart/payment"><button>CHECKOUT</button></a>
+
+
+
+
+            </div>
+        </div>
+
+
+        <%- include("../partials/footer") %>

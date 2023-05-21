@@ -1,0 +1,163 @@
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+    /* margin-top: 30px; */
+    cursor: pointer;
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #fff;
+}
+
+/* //navbar */
+.hamburger-toggle {
+    display: none;
+}
+
+@media screen and (max-width:1395px) {
+    .service-list {
+        height: 240px;
+        /* border: 2px solid black; */
+    }
+
+}
+
+
+@media screen and (max-width:770px) {
+    .service-list {
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:726px) {
+    .service-list {
+        height: 520px;
+    }
+
+}
+
+
+@media screen and (max-width:991px) {
+    .hamburger-toggle {
+        display: block;
+        margin-right: 50px;
+    }
+
+    .navbar-list {
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        width: 100%;
+        top: 100px;
+        text-align: center;
+        transition: 0.2s ease-in-out;
+    }
+
+    .navbar-list.active {
+        left: 0;
+    }
+
+    .navbar {
+        overflow: initial;
+    }
+
+    /* .hamburger-toggle */
+
+    .navbar-list {
+        display: flex;
+    }
+
+
+    .navbar-container ul {
+        flex-direction: column;
+    }
+
+    /* //mainContent */
+    .show-container {
+        flex-direction: column;
+    }
+
+    .login-container {
+        width: 60vw;
+    }
+
+    .signUp-container {
+        width: 60vw;
+    }
+
+    .contact-container {
+        height: 60vw;
+    }
+
+
+}
+
+
+@media screen and (max-width:650px) {
+    .login-container {
+        width: 80vw;
+    }
+
+    .signUp-container {
+        width: 60vw;
+    }
+
+    .signUpPassword-container label {
+        padding-left: 10px;
+    }
+
+    .signUpEmail-container label {
+        padding-left: 10px;
+    }
+
+    .signUpUsername-container label {
+        padding-left: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .login-container {
+        width: 80vw;
+    }
+
+    .signUp-container {
+        width: 80vw;
+    }
+
+    .signUpPassword-container label {
+        padding-left: 10px;
+    }
+
+    .signUpEmail-container label {
+        padding-left: 10px;
+    }
+
+    .signUpUsername-container label {
+        padding-left: 10px;
+    }
+}
+
+
+
+
+/* Responsive Contact Page */
+
+@media screen and (max-width:991px) {
+    .contact-container {
+        width: 60vw;
+        height: 70vh;
+    }
+}

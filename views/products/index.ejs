@@ -1,0 +1,110 @@
+<%- include("../partials/header")%>
+
+    <%- include("../partials/navbar") %>
+
+
+
+
+
+        <!-- Banner Image -->
+        <img style="width: 100vw; height: 80vh;" src="" alt="" srcset="">
+
+        <!-- ///Services -->
+
+        <div class="service-container">
+
+
+            <ul class="service-list">
+                <li class="service-list-item">
+                    <!-- <i class="fa-solid fa-truck-fast"></i> -->
+                    <h3>FREE SHIPING</h3>
+                    <p>All Order over $150</p>
+                </li>
+                <li class="service-list-item">
+                    <h3>QUICK PAYMENT</h3>
+                    <p>100% secure payment</p>
+                </li>
+                <li class="service-list-item">
+                    <h3>FREE RETURNS</h3>
+                    <p>Money back in 30 days</p>
+                </li>
+                <li class="service-list-item">
+                    <h3>24/7 SUPPORT</h3>
+                    <p>Get Quick Support</p>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- Main Container -->
+
+        <div class="main-container">
+
+            <h2>Bestsellers Products</h2>
+
+            <ul class="main-list-container">
+                <% for(let product of products) {%>
+                    <li class="main-list-item">
+                        <div class="main-list-item-container">
+                            <img src="<%=product.img %>" alt="" srcset="">
+                            <div class="card-content">
+                                <h2 class="h3 card-title">
+                                    <a href="#">
+                                        <%= product.name %>
+                                    </a>
+                                </h2>
+
+                                <h2 class=" card-price" value="180.85">
+                                    $<%= product.price%>
+                                </h2><br>
+
+                                <a class="view-product" href="/products/<%= product._id %>">View
+                                    Product</a>
+                                <!-- <button>More Info</button> -->
+                            </div>
+                        </div>
+                    </li>
+                    <% } %>
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+
+            // Banner Image change automatic using set Interval Function
+            const image = document.querySelector('img');
+            let isTrue = false;
+            setInterval(() => {
+                if (isTrue) {
+                    image.setAttribute('src', "https://images.unsplash.com/photo-1552346154-21d32810aba3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c25lYWtlcnN8ZW58MHx8MHx8&w=1000&q=80")
+                }
+                else {
+                    image.setAttribute('src', "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c25lYWtlcnN8ZW58MHx8MHx8&w=1000&q=80")
+                }
+                isTrue = !isTrue;
+            }, 2000)
+
+        </script>
+
+
+
+        <%- include("../partials/footer") %>

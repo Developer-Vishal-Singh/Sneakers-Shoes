@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 14;
+    overflow: hidden;
+}
+
+
+
+.navbar-container {
+    /* position: fixed;
+    top: 0; */
+    background-color: rgb(209, 208, 208);
+    /* background-color: chocolate; */
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #7fffd4; */
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100px;
+    /* position: relative; */
+}
+
+.navbar-logo a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar-logo h1 {
+    font-size: 45px;
+    padding: 16px 55px;
+}
+
+
+.navbar-logo h1::first-letter {
+    color: chocolate;
+    font-size: 55px;
+}
+
+.navbar-logo a:hover {
+    color: chocolate;
+}
+
+
+.navbar-list {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: chocolate; */
+    width: 900px;
+    /* margin-left: 540px; */
+}
+
+.navbar-list-item {
+    font-size: 30px;
+    list-style-type: none;
+    font-weight: bold;
+    padding: 30px 10px;
+    font-family: sans-serif;
+}
+
+.navbar-list-item a {
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+
+}
+
+
+.navbar-list-item a:hover {
+    color: chocolate;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+/* main Page Content */
+
+
+.main-container>h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 25px;
+    font-family: cursive;
+    color: chocolate;
+}
+
+
+
+.main-list-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 10px; */
+}
+
+
+.main-list-item-container {
+    width: 400px;
+    height: 500px;
+    border: 1px solid rgb(235, 235, 235);
+    margin: 20px;
+    /* text-shadow: 15px 15px 6px chocolate; */
+}
+
+.main-list-item-container img {
+    width: 398px;
+    height: 350px;
+
+}
+
+.card-content {
+    margin: 10px auto 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-content a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.card-content h2 {
+    font-size: 20px;
+}
+
+.card-content h2 {
+    color: rgb(241, 108, 12);
+    font-size: 25px;
+    /* padding: 5px; */
+    /* margin: 15px; */
+}
+
+.view-product {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: rgb(228, 228, 228);
+    color: black;
+}
+
+.view-product:hover {
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: chocolate;
+
+}
+
+.main-list-item {
+    transition: all 0.5s ease-in 0.1s;
+}
+
+.main-list-item img:hover {
+    transform: scale(1.1);
+    background-color: grey;
+    /* background-color: rgb(222, 149, 97); */
+}
+
+
+
+
+
+
+/* Main Page Services like shipping,return etc */
+
+
+.service-container {
+    width: 100vw;
+    /* height: 90px; */
+    /* border: 2px solid black; */
+}
+
+.service-list {
+    height: 120px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: chocolate;
+    color: white;
+    margin: 40px 50px;
+}
+
+.service-list-item {
+    /* border: 2px solid white; */
+    font-size: 30px;
+    padding: 30px;
+}
+
+.service-list-item p {
+    font-size: 25px;
+}
+
+
+
+
+
+/* Main Page Footer Footer */
+/* © 2022 codewithsadee. All Rights Reserved */
+
+.footer-container {
+    width: 100vw;
+    height: 100px;
+    /* position: fixed; */
+
+
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-container h3 {
+    margin: 40px;
+    padding: 33px;
+    font-size: x-large;
+}
+
+/* .footer-container {
+    position: sticky;
+    top: 90vw;
+} */

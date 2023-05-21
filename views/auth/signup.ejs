@@ -1,0 +1,39 @@
+<%- include("../partials/header") %>
+    <%- include("../partials/navbar") %>
+
+
+
+        <div class="signUp-container">
+            <div class="signUp-nav-container">
+
+                <!-- <h3><a href="/login">SIGN IN</a></h3> -->
+                <h3><a href="/register">SIGN UP</a></h3>
+
+            </div>
+            <div class="signUp-main-container">
+
+                <form action="/register" method="post">
+                    <div class="signUpUsername-container">
+                        <label for="">USERNAME</label><br>
+                        <input type="text" name="username">
+                    </div><br>
+                    <div class="signUpEmail-container">
+                        <label for="">EMAIL</label><br>
+                        <input type="email" name="email" id="">
+                    </div>
+                    <br>
+                    <div class="signUpPassword-container">
+                        <label for="">PASSWORD</label><br>
+                        <input type="password" name="password" id="">
+                    </div>
+
+
+                    <button type="submit">SIGN UP</button>
+                    <a href="">Forget Password?</a>
+                    <a href="/login">Login ?</a>
+                </form>
+
+            </div>
+        </div>
+
+        <%- include("../partials/footer") %>

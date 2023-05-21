@@ -1,0 +1,99 @@
+<%- include("../partials/header")%>
+
+    <%- include("../partials/navbar") %>
+
+
+
+        <div class="userProfile-container">
+
+            <h3>USER PROFILE</h3>
+            <br>
+            <hr>
+
+            <div class="userProfileInner-container">
+                <label for="">Username</label>
+                <input type="text" value=<%=currentUser.username %>>
+
+
+                <label for="">EMAIL</label>
+                <input type="text" value=<%=currentUser.email %>>
+
+                <br>
+
+                <button><a href="/logout">logout</a></button>
+            </div>
+
+        </div>
+
+        <style>
+            .userProfile-container {
+                width: 500px;
+                height: 700px;
+                background-color: rgb(218, 218, 218);
+                margin-left: 700px;
+                margin-top: 150px;
+
+            }
+
+            .userProfile-container label {
+                display: block;
+                width: 250px;
+                height: 40px;
+                font-size: 30px;
+                /* background-color: brown; */
+                text-align: center;
+                margin-top: 50px;
+                margin-left: 125px;
+                color: rgb(86, 86, 86);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .userProfile-container input {
+                width: 280px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 28px;
+                background-color: rgb(165, 90, 36);
+                border: 1px solid #ededed;
+                margin-top: 10px;
+                margin-left: 125px;
+                color: white;
+            }
+
+            .userProfile-container button {
+                display: block;
+                width: 100px;
+                height: 40px;
+
+                font-size: 30px;
+                text-decoration: none;
+                margin-top: 20px;
+                margin-left: 200px;
+            }
+
+            .userProfile-container a {
+                text-decoration: none;
+                color: rgb(48, 48, 48);
+                cursor: pointer;
+            }
+
+            .userProfile-container a:hover {
+                color: chocolate;
+            }
+
+            .userProfile-container h3 {
+                text-align: center;
+                font-size: 40px;
+                color: rgb(46, 46, 46);
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+        <%- include("../partials/footer") %>

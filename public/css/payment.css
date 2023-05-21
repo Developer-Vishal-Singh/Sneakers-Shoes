@@ -1,0 +1,42 @@
+.payment-container {
+    width: 50vw;
+    height: 70vh;
+    background-color: rgb(214, 214, 214);
+    margin: 130px auto;
+}
+
+.paymentNav-container {
+    /* background-color: bisque; */
+    padding: 25px;
+    font-size: 25px;
+    color: chocolate;
+
+}
+
+.paymentMain-container {
+    margin: 15px;
+}
+
+.paymentMain-container label {
+    font-size: 25px;
+    color: rgb(84, 84, 84);
+}
+
+.paymentMain-container input {
+    width: 80%;
+    height: 50px;
+    border-radius: 18px;
+    /* background-color: chocolate; */
+    color: white;
+    font-size: 15px;
+}
+
+.paymentMain-container button {
+    font-size: 25px;
+    color: rgb(84, 84, 84);
+    cursor: pointer;
+}
+
+.paymentMain-container button:hover {
+    color: chocolate;
+}

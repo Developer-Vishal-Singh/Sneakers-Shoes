@@ -1,0 +1,53 @@
+<%- include("../partials/header")%>
+    <%- include("../partials/navbar") %>
+
+
+
+        <div class="edit-container">
+
+
+
+            <form class="editForm-container needs-validation" action="/products/<%=product._id%>?_method=PATCH"
+                method="post" novalidate>
+                <h1>EDIT PRODUCT</h1>
+                <div class="img-container editValue-container ">
+                    <label for="">Username :</label>
+                    <input type="text" class="form-control" name="product[name]" value="<%=product.name %>" required>
+
+                </div><br><br>
+                <div class="price-container editValue-container">
+                    <label for="">Price :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" class="form-control" name="product[price]" id="" value="<%=product.price %>"
+                        required>
+
+                </div><br><br>
+                <div class="image-container editValue-container">
+                    <label for="">Image :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="type" class="form-control" name="product[img]" id="" value="<%=product.img %>"
+                        required>
+
+                </div><br><br>
+                <div class="desc-container editValue-container">
+                    <label for="">Desc : </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea name="product[desc]" class="form-control" id="" cols="40" rows="5"
+                        required><%=product.desc %></textarea>
+
+                </div><br><br><br><br>
+
+                <button type="submit" class="editValue-container">UPDATE</button>
+            </form>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <%- include("../partials/footer") %>
